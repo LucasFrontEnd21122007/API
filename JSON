@@ -1,0 +1,19 @@
+{
+  "name": "readline-sync",
+  "version": "1.0.0",
+  "description": "Bot Discord",
+  "main": "Index.js",
+  "scripts": {
+    "test": "NPM INIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Discord-Bot"
+  },
+  "keywords": [
+    "Discord",
+    "Bot"
+  ],
+  "author": "LucasFrontEnd21122007",
+  "license": "MIT"
+}
