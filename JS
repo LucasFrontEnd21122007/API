@@ -1,0 +1,29 @@
+// Importa a biblioteca readline-sync
+const readline = require('readline-sync');
+
+// Função para exibir uma pergunta e obter uma resposta do usuário
+function obterResposta(pergunta) {
+  return readline.question(pergunta + ' ');
+}
+
+// Função principal do bot
+function botDeEstudos() {
+  console.log('Bem-vindo ao Bot de Estudos!');
+
+  // Loop principal do bot
+  while (true) {
+    // Exibe uma pergunta e obtém a resposta do usuário
+    const resposta = obterResposta('Qual é a sua pergunta?');
+
+    // Verifica a resposta do usuário e responde de acordo
+    if (resposta === 'sair') {
+      console.log('Obrigado por utilizar o Bot de Estudos. Até mais!');
+      break;
+    } else {
+      console.log('Desculpe, não entendi. Por favor, faça outra pergunta.');
+    }
+  }
+}
+
+// Chama a função principal do bot
+botDeEstudos();
